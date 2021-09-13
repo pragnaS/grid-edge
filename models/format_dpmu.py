@@ -4,7 +4,8 @@ import sys
 #you must have python 3 or above to run this!
 
 #directory is a command line argument, path to folder of multi voltage csv's
-directory = sys.argv[1]
+#directory = sys.argv[1]
+directory = 'C:\Users\Swetha\grid-edge\data\target-data\nonscaled_targets'
 
 for phase_data in os.listdir(directory):
     #phase data is multi_voltageA.csv,multi_voltageB.csv etc.
