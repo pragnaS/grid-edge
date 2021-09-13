@@ -13,6 +13,6 @@ for phase_data in os.listdir(directory):
         lines = f.readlines()
 
 #edited csv's will be put into a folder called "edited_dpmu" within the directory argument
-    with open(directory+ "/" + "edited_dpmu/" + phase_data + ".csv", "w") as f:
+    with open("edited_dpmu/" + phase_data + ".csv", "w") as f:
         for line in lines[8:]:
                 f.write(line)
