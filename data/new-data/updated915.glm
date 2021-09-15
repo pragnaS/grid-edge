@@ -233,7 +233,7 @@ object overhead_line {
 	 name overhead_line1;
      phases "ABCN";
      from Meter1;
-     to Houses4_5_6;
+     to 4_5_6;
      length 500;
      configuration line_configuration3;
 }
@@ -241,8 +241,8 @@ object overhead_line {
 object overhead_line {
 	 name overhead_line2;
      phases "ABCN";
-     from Houses4_5_6;
-     to Houses7_8_9;
+     from 4_5_6;
+     to 7_8_9;
      length 300;
      configuration line_configuration3;
 }
@@ -260,7 +260,7 @@ object overhead_line {
 	 name overhead_line4;
      phases "ABCN";
      from Meter1;
-     to Houses10_11_12;
+     to 10_11_12;
      length 2000;
      configuration line_configuration1;
 }
@@ -268,7 +268,7 @@ object overhead_line {
 object overhead_line {
 	 name overhead_line6;
      phases "ABCN";
-     from Houses10_11_12;
+     from 10_11_12;
      to Meter3;
      length 1000;
      configuration line_configuration1;
@@ -277,7 +277,7 @@ object overhead_line {
 object overhead_line {
 	 name overhead_line7;
      phases "ABCN";
-     from Houses10_11_12;
+     from 10_11_12;
      to Meter4;
      length 300;
      configuration line_configuration4;
@@ -287,7 +287,7 @@ object overhead_line {
  	 name overhead_line8;
       phases "ABCN";
       from Meter4;
-      to Houses16_17_18;
+      to 16_17_18;
       length 300;
       configuration line_configuration5;
 }
@@ -296,7 +296,7 @@ object underground_line {
 	  name overhead_line9;
       phases "ABCN";
       from Meter4;
-      to Houses13_14_15;
+      to 13_14_15;
       length 800;
       configuration line_configuration7;
 }
@@ -304,8 +304,8 @@ object underground_line {
 object underground_line {
 	 name overhead_line10;
      phases "ABCN";
-     from Houses19_20_21;
-     to Houses22_23_24;
+     from 19_20_21;
+     to 22_23_24;
      length 500;
      configuration line_configuration6;
 }
@@ -368,7 +368,7 @@ object meter {
 } 
  
 object meter {
-      name Houses1_2_3;
+      name 1_2_3;
       phases "ABCN";
       voltage_A 2401.7771;
       voltage_B -1200.8886-2080.000j;
@@ -377,7 +377,7 @@ object meter {
 }
 
 object meter {
-      name Houses4_5_6;
+      name 4_5_6;
       phases "ABCN";
       voltage_A 2401.7771;
       voltage_B -1200.8886-2080.000j;
@@ -386,7 +386,7 @@ object meter {
 }   
  
 object meter {
-      name Houses7_8_9;
+      name 7_8_9;
       phases "ABCN";
       voltage_A 2401.7771;
       voltage_B -1200.8886-2080.000j;
@@ -395,7 +395,7 @@ object meter {
 } 
 
 object meter {
-      name Houses13_14_15;
+      name 13_14_15;
       phases "ABCN";
       voltage_A 2401.7771;
       voltage_B -1200.8886-2080.000j;
@@ -404,7 +404,7 @@ object meter {
 }
 
 object meter {
-      name Houses10_11_12;
+      name 10_11_12;
       phases "ABCN";
       voltage_A 2401.7771;
       voltage_B -1200.8886-2080.000j;
@@ -413,7 +413,7 @@ object meter {
 }
 
 object meter {
-      name Houses22_23_24;
+      name 22_23_24;
       phases "ABCN";
       voltage_A 2401.7771;
       voltage_B -1200.8886-2080.000j;
@@ -422,7 +422,7 @@ object meter {
 }   
 
 object meter {
-      name Houses19_20_21;
+      name 19_20_21;
       phases "ABCN";
       voltage_A 2401.7771;
       voltage_B -1200.8886-2080.000j;
@@ -431,7 +431,7 @@ object meter {
 } 
 
 object meter {
-      name Houses16_17_18;
+      name 16_17_18;
       phases "ABCN";
       voltage_A 2401.7771;
       voltage_B -1200.8886-2080.000j;
@@ -442,7 +442,7 @@ object meter {
 // Create load objects 
 
 object load { 
-    parent Houses7_8_9; 
+    parent 7_8_9; 
     name Load7_8_9; 
     phases ABCN;
     object player { 
@@ -464,7 +464,7 @@ object load {
 } 
 
 object load { 
-    parent Houses4_5_6; 
+    parent 4_5_6; 
     name Load4_5_6; 
     phases ABCN; 
     object player { 
@@ -486,7 +486,7 @@ object load {
 } 
 
 object load { 
-    parent Houses1_2_3; 
+    parent 1_2_3; 
     name Load1_2_3; 
     phases ABCN; 
     object player { 
@@ -508,7 +508,7 @@ object load {
 } 
 
 object load { 
-    parent Houses16_17_18; 
+    parent 16_17_18; 
     name Load16_17_18; 
     phases ABCN; 
     object player { 
@@ -530,7 +530,7 @@ object load {
 } 
 
 object load { 
-    parent Houses13_14_15; 
+    parent 13_14_15; 
     name Load13_14_15; 
     phases ABCN; 
     object player { 
@@ -552,7 +552,7 @@ object load {
 } 
 
 object load { 
-    parent Houses10_11_12; 
+    parent 10_11_12; 
     name Load10_11_12; 
     phases ABCN; 
     object player { 
@@ -574,7 +574,7 @@ object load {
 } 
 
 object load { 
-    parent Houses19_20_21; 
+    parent 19_20_21; 
     name Load19_20_21; 
     phases ABCN; 
     object player { 
@@ -596,7 +596,7 @@ object load {
 } 
 
 object load { 
-    parent Houses22_23_24; 
+    parent 22_23_24; 
     name Load22_23_24; 
     phases ABCN; 
     object player { 
@@ -621,8 +621,8 @@ object load {
 object switch {
 	 name switch1;
      phases "ABCN";
-     from Houses10_11_12;
-     to Houses19_20_21;
+     from 10_11_12;
+     to 19_20_21;
      status CLOSED;
 }
  
@@ -631,7 +631,7 @@ object transformer {
 	name XFMR1;
   	phases "ABCN";
   	from Meter2;
-  	to Houses1_2_3;
+  	to 1_2_3;
   	configuration transformer_configuration1;
 }
   
