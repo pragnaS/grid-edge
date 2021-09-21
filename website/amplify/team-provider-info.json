@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gridedge-staging-175351-authRole",
+      "UnauthRoleArn": "arn:aws:iam::747694316869:role/amplify-gridedge-staging-175351-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::747694316869:role/amplify-gridedge-staging-175351-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-gridedge-staging-175351-deployment",
+      "UnauthRoleName": "amplify-gridedge-staging-175351-unauthRole",
+      "StackName": "amplify-gridedge-staging-175351",
+      "StackId": "arn:aws:cloudformation:us-east-2:747694316869:stack/amplify-gridedge-staging-175351/e1ccfe90-1b04-11ec-9f9e-0ade5db5f1fa",
+      "AmplifyAppId": "d268fg8dq3dhum"
+    }
+  }
+}
