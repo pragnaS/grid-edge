@@ -10,6 +10,11 @@
       "StackName": "amplify-gridedge-staging-175351",
       "StackId": "arn:aws:cloudformation:us-east-2:747694316869:stack/amplify-gridedge-staging-175351/e1ccfe90-1b04-11ec-9f9e-0ade5db5f1fa",
       "AmplifyAppId": "d268fg8dq3dhum"
+    },
+    "categories": {
+      "auth": {
+        "gridedgeb48d68ee": {}
+      }
     }
   }
 }
