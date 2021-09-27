@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "gridedgeb48d68ee": {}
+      },
+      "function": {
+        "RunPredictionModel": {
+          "deploymentBucketName": "amplify-gridedge-staging-175351-deployment",
+          "s3Key": "amplify-builds/RunPredictionModel-6c36555736314d446365-build.zip"
+        }
       }
     }
   }
