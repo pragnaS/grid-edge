@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "storage": {
+      "S3CloudStorage": [
+        "create",
+        "read",
+        "update",
+        "delete"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}
