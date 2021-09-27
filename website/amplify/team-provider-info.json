@@ -18,7 +18,7 @@
       "function": {
         "RunPredictionModel": {
           "deploymentBucketName": "amplify-gridedge-staging-175351-deployment",
-          "s3Key": "amplify-builds/RunPredictionModel-6c36555736314d446365-build.zip"
+          "s3Key": "amplify-builds/RunPredictionModel-4a5552637a4c2b43736c-build.zip"
         }
       }
     }

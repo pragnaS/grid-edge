@@ -78,7 +78,6 @@
               "Ref": "storageS3CloudStorageBucketName"
             },
             "MODEL_BUCKET": "dpmu-prediction-model-resource-bucket"
-            
           }
         },
         "Role": {
