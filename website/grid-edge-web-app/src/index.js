@@ -64,7 +64,7 @@ import './css/styles.css';
 // ========================================
 
 // ReactDOM.render(
-  // <Game />,
-  // document.getElementById('root')
+//   <Game />,
+//   document.getElementById('root')
 // );
 
