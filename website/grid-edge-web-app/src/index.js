@@ -62,9 +62,17 @@ import './css/styles.css';
 // }
 
 // ========================================
+import Amplify, { Auth, Storage } from 'aws-amplify';
+import App from './app';
+import awsmobile from './aws-exports.js';
+
+Amplify.configure(awsmobile);
+Auth.configure(awsmobile);
+Storage.configure(awsmobile);
+
 
 // ReactDOM.render(
-  // <Game />,
-  // document.getElementById('root')
+//   <App />,
+//   document.getElementById('root')
 // );
 
