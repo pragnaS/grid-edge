@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import './index.css';
 
-import './css/styles.css';
+// import './css/styles.css';
 
 // class Square extends React.Component {
 //   render() {
@@ -62,9 +62,17 @@ import './css/styles.css';
 // }
 
 // ========================================
+import Amplify, { Auth, Storage } from 'aws-amplify';
+import App from './app';
+import awsmobile from './aws-exports.js';
+
+Amplify.configure(awsmobile);
+Auth.configure(awsmobile);
+Storage.configure(awsmobile);
+
 
 // ReactDOM.render(
-//   <Game />,
+//   <App />,
 //   document.getElementById('root')
 // );
 

@@ -1,11 +1,15 @@
 import { S3Client } from "@aws-sdk/client-s3";
 import { PutObjectCommand, GetObjectCommand } from "@aws-sdk/client-s3";
+import Amplify, { Auth, Storage } from 'aws-amplify';
+// import App from "./app";
+import awsmobile from './aws-exports.js';
+
+Amplify.default.configure(awsmobile);
 
 const REGION = "us-east-2";
 const CSV_BUCKET = "pecan-street-data-csv-bucket175351-staging";
 
-// const s3Client = new S3Client({ region: REGION }); // needs bucketEndpoint? (create via console or amplify sdk & attach to bucket)
-
+// don't use this, look at app.js
 function uploadFile(fileName){
     try {
         const client = new S3Client({ region: REGION });
@@ -31,5 +35,3 @@ function downloadFile(fileName){
         return null;
     }
 }
-
-uploadFile("assets\\img\\panel.png");
