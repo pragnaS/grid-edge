@@ -1,7 +1,7 @@
 {
   "permissions": {
-    "storage": {
-      "S3CloudStorage": [
+    "function": {
+      "tempFunction": [
         "create",
         "read",
         "update",
