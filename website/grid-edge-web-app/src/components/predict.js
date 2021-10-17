@@ -16,7 +16,7 @@ import { Storage } from 'aws-amplify';
 function Predict() {
     const [file, setFile] = useState();
     const [uploaded, setUploaded] = useState(false);
-
+    const [output, setOutput] = useState(false);
 
     // render() {
         return (
@@ -55,7 +55,7 @@ function Predict() {
                         console.log(storageResult);
                     }}>
                         
-                        Predict DPMU Data
+                        Upload Smart Meter Data
                         
                     </a>
                 
@@ -81,8 +81,63 @@ function Predict() {
                 </div>
 
             </div>
+
+            <div class="container">
+                <h3 class="text-center text-uppercase text-white">Prediction Results</h3>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+
+                
+                <div class="text-center">
+                    {/* {uploaded
+                    ?  */}
+                    
+                    <div class="container" >
+                        <a class="btn btn-lg btn-light" onClick={async () => {
+                            // const result = await Storage.get('y.csv', { download: true });
+                            
+                            
+                                const result = await Storage.get('message.txt',
+                                {
+                                    contentType: 'text/plain',
+                                    level: 'public/',
+                                })
+                                // .then(result=>{result.Body.text()
+                                // .then(string=>console.log(string))})
+                                .then(setOutput(true))
+                                .catch(err => console.log(err))
+                                
+                                result.Body.text().then(string => {
+                                    console.log(string)
+                                })
+
+                        }}>
+                            Predict DPMU Data
+                        
+                            {/* <a href={signedURL} target="_blank">Download</a> */}
+
+                        </a>
+
+
+                    </div>
+
+                    <div class="divider-custom divider-light"></div>
+
+                    
+                    {output 
+                    ? <p></p>
+                    : <h5>No predictions yet.</h5>
+                    }
+                </div>
+            </div>
         </section>
         )
     // }
 }
+
+
 export default Predict;
