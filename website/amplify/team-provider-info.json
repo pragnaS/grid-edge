@@ -13,10 +13,6 @@
     },
     "categories": {
       "function": {
-        "RunPredictionModel": {
-          "deploymentBucketName": "amplify-gridedge-staging-175351-deployment",
-          "s3Key": "amplify-builds/RunPredictionModel-535363514a3261444233-build.zip"
-        },
         "gridedgeb48d68eeDefineAuthChallenge": {
           "deploymentBucketName": "amplify-gridedge-staging-175351-deployment",
           "s3Key": "amplify-builds/gridedgeb48d68eeDefineAuthChallenge-614d634256435733534f-build.zip"
@@ -24,10 +20,6 @@
         "gridedgeb48d68eeCreateAuthChallenge": {
           "deploymentBucketName": "amplify-gridedge-staging-175351-deployment",
           "s3Key": "amplify-builds/gridedgeb48d68eeCreateAuthChallenge-517a433579512f466f4b-build.zip"
-        },
-        "tempFunction": {
-          "deploymentBucketName": "amplify-gridedge-staging-175351-deployment",
-          "s3Key": "amplify-builds/tempFunction-33422b615171336e4856-build.zip"
         },
         "gridedgeRunModelLayer": {
           "deploymentBucketName": "amplify-gridedge-staging-175351-deployment",
