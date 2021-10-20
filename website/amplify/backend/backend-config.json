@@ -28,38 +28,8 @@
     "S3CloudStorage": {
       "service": "S3",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "RunPredictionModel",
-          "attributes": [
-            "Name",
-            "Arn",
-            "LambdaExecutionRole"
-          ]
-        }
-      ]
+      "dependsOn": []
     }
   },
-  "function": {
-    "RunPredictionModel": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda",
-      "dependsOn": [
-        {
-          "category": "function",
-          "resourceName": "tempFunction",
-          "attributes": [
-            "Name"
-          ]
-        }
-      ]
-    },
-    "tempFunction": {
-      "build": true,
-      "providerPlugin": "awscloudformation",
-      "service": "Lambda"
-    }
-  }
+  "function": {}
 }
