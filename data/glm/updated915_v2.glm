@@ -642,7 +642,7 @@ object transformer {
 }
   
 object group_recorder {
-	name MeterCorderA;
+    name MeterCorderA;
     group "class=meter";
     file multi_voltageA.csv;
     interval 60;
