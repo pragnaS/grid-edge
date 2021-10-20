@@ -1,6 +1,6 @@
 {
     "identityPoolName": "gridedgeb48d68ee_identitypool_b48d68ee",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "gridedb48d68ee",
     "userPoolName": "gridedgeb48d68ee_userpool_b48d68ee",
     "autoVerifiedAttributes": [
