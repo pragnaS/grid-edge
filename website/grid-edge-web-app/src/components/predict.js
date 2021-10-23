@@ -18,6 +18,14 @@ function Predict() {
     const [uploaded, setUploaded] = useState(false);
     const [output, setOutput] = useState(false);
 
+
+    Storage.configure({
+        customPrefix: {
+            public: 'public/',
+        },
+        // ...
+    })
+
     // render() {
         return (
             <section class="page-section bg-primary text-white mb-0" id="predict">
@@ -47,9 +55,9 @@ function Predict() {
                     <i class="fas fa-upload me-2"></i>
 
                     <a class="btn btn-lg btn-light" onClick={async () => {
-                        const storageResult = await Storage.put('uploaded-file.png', file, {
+                        const storageResult = await Storage.put('uploads/inputs.csv', file, {
                         level: 'public',
-                        type: 'image/png'
+                        type: 'text/csv'
                         })
                         setUploaded(true)
                         console.log(storageResult);
@@ -89,36 +97,58 @@ function Predict() {
                     <div class="divider-custom-icon"><i class="fas fa-bolt"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-
+                
+                
 
                 
                 <div class="text-center">
                     {/* {uploaded
                     ?  */}
                     
+                
                     <div class="container" >
                         <a class="btn btn-lg btn-light" onClick={async () => {
-                            // const result = await Storage.get('y.csv', { download: true });
+
+                           
                             
-                            
-                                const result = await Storage.get('message.txt',
-                                {
-                                    contentType: 'text/plain',
-                                    level: 'public/',
-                                })
-                                // .then(result=>{result.Body.text()
-                                // .then(string=>console.log(string))})
-                                .then(setOutput(true))
-                                .catch(err => console.log(err))
-                                
-                                result.Body.text().then(string => {
-                                    console.log(string)
-                                })
+                            // console.log(result)
+
+                            // result.Body.text().then(string => {
+                            //     console.log(string)
+                            // })
 
                         }}>
                             Predict DPMU Data
                         
-                            {/* <a href={signedURL} target="_blank">Download</a> */}
+                            {/* <a href={result} target="_blank">Download</a> */}
+
+                        </a>
+
+
+                    </div>
+
+                    <div class="container" >
+                        <a class="btn btn-lg btn-light" onClick={async () => {
+
+                            const result = await Storage.get('predictions/y.csv',
+                            {
+                                contentType: 'text/csv',
+                                level: 'public/',
+                                download: 'true'
+                            })
+                            .then(setOutput(true))
+                            .catch(err => setOutput(false))
+                            
+                            // console.log(result)
+
+                            // result.Body.text().then(string => {
+                            //     console.log(string)
+                            // })
+
+                        }}>
+                            Predict DPMU Data
+                        
+                            {/* <a href={result} target="_blank">Download</a> */}
 
                         </a>
 
@@ -138,6 +168,7 @@ function Predict() {
         )
     // }
 }
+
 
 
 export default Predict;
