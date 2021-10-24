@@ -26,6 +26,9 @@ function Predict() {
         // ...
     })
 
+
+
+    
     // render() {
         return (
             <section class="page-section bg-primary text-white mb-0" id="predict">
@@ -105,48 +108,50 @@ function Predict() {
                     {/* {uploaded
                     ?  */}
                     
-                
-                    <div class="container" >
-                        <a class="btn btn-lg btn-light" onClick={async () => {
 
-                           
+                    <div class="container"  id="predict">
+                        <a id ="download" class="btn btn-xl btn-outline-light" onClick={async () => {
+
                             
-                            // console.log(result)
-
-                            // result.Body.text().then(string => {
-                            //     console.log(string)
-                            // })
-
-                        }}>
-                            Predict DPMU Data
-                        
-                            {/* <a href={result} target="_blank">Download</a> */}
-
-                        </a>
-
-
-                    </div>
-
-                    <div class="container" >
-                        <a class="btn btn-lg btn-light" onClick={async () => {
-
-                            const result = await Storage.get('predictions/y.csv',
+                            const result = await Storage.get('predictions/inputs_predictions.csv',
                             {
                                 contentType: 'text/csv',
                                 level: 'public/',
                                 download: 'true'
                             })
                             .then(setOutput(true))
-                            .catch(err => setOutput(false))
-                            
-                            // console.log(result)
+                            .catch(err => {
+                                console.log(err)
+                                setOutput(false)
+                            })
+                            // var div = document.createElement('div')
+                            // div.classList.add("container")
+                            // div.classList.add("mt-4")
 
-                            // result.Body.text().then(string => {
-                            //     console.log(string)
-                            // })
+ 
+                            var a = document.createElement('a')
+                            a.classList.add("btn")
+                            a.classList.add("btn-xl")
+                            a.classList.add("btn-outline-light")
+                            a.classList.add("text-center")
+                            a.classList.add("my-auto")
+
+          
+                            var link_text = document.createTextNode('Download Results')
+                            a.appendChild(link_text)
+                            a.title = 'Download'
+                            a.href = result
+                            // div.appendChild(a)
+                            var firstbtn = document.getElementById("download");
+                            
+                            firstbtn.parentNode.replaceChild(a, firstbtn)
+
+                            //use when changing to download button when results are ready
+                            // document.getElementById("download").appendChild(a)
+                            
 
                         }}>
-                            Predict DPMU Data
+                            Download Results
                         
                             {/* <a href={result} target="_blank">Download</a> */}
 
@@ -158,10 +163,10 @@ function Predict() {
                     <div class="divider-custom divider-light"></div>
 
                     
-                    {output 
-                    ? <p></p>
+                    {/* {output 
+                    ? <h5></h5>
                     : <h5>No predictions yet.</h5>
-                    }
+                    } */}
                 </div>
             </div>
         </section>
