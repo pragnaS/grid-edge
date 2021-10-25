@@ -64,7 +64,7 @@ function Predict() {
         // }
         // setOutput(result)
 
-        const result = await Storage.get('predictions/inputs6_predictions.csv',
+        const result = await Storage.get('predictions/X_predictions.csv',
         {
             contentType: 'text/csv',
             level: 'public/',
@@ -130,7 +130,7 @@ function Predict() {
                         <i class="fas fa-upload me-2"></i>
 
                         <a class="btn btn-lg btn-light" onClick={async () => {
-                            const storageResult = await Storage.put('uploads/inputs6.csv', file, {
+                            const storageResult = await Storage.put('uploads/X.csv', file, {
                             level: 'public',
                             type: 'text/csv'
                             })
