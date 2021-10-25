@@ -18,6 +18,7 @@ function Predict() {
     const [uploaded, setUploaded] = useState(false);
     const [output, setOutput] = useState(null);
 
+    const delay = ms => new Promise(res => setTimeout(res, ms));
 
     // Storage.configure({
     //     customPrefix: {
@@ -72,8 +73,8 @@ function Predict() {
         })
         var linebreak = document.createElement("br");
     
-        document.getElementById("upload").appendChild(linebreak)
-        document.getElementById("upload").appendChild(linebreak)
+        document.getElementById("predict").appendChild(linebreak)
+        document.getElementById("predict").appendChild(linebreak)
  
         var a = document.createElement('a') 
         a.id = "firstbtn"
@@ -95,7 +96,7 @@ function Predict() {
             firstbtn.parentNode.replaceChild(a, firstbtn)
         } else {
         //use when changing to download button when results are ready
-            document.getElementById("upload").appendChild(a)
+            document.getElementById("predict").appendChild(a)
         }
     } 
     
@@ -103,7 +104,7 @@ function Predict() {
     
     // render() {
         return (
-        <section class="text-center page-section bg-primary text-white mb-0" id="upload">
+        <section class="text-center page-section bg-primary text-white mb-0" id="predict">
             <div>
                 <div class="divider-custom divider-light"></div>
             </div>
@@ -132,10 +133,25 @@ function Predict() {
                         <a class="btn btn-lg btn-light" onClick={async () => {
                             const storageResult = await Storage.put('uploads/X.csv', file, {
                             level: 'public',
-                            type: 'text/csv'
+                            type: 'text/csv',
+                            tagging: 'linear=true&Neural=false'
                             })
                             setUploaded(true)
                             console.log(storageResult)
+
+
+                            var h = document.createElement("h4")
+                            var t = document.createTextNode("Predicting...")
+                            h.classList.add('text-center')
+                            h.classList.add('text-white')
+                            // h.title = "Loading..."
+                            h.appendChild(t)
+                            document.getElementById("predict").appendChild(h)
+
+                            await delay(20000);
+
+                            document.getElementById("predict").removeChild(h)
+
                             getOutput()
 
                         }}>
