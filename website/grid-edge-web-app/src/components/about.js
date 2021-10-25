@@ -19,12 +19,17 @@ export class About extends Component {
                         of distributed energy resources (e.g., wind turbines, solar panels) in electrical grids. One key problem experts are facing in the 
                         power industry is determining how to utilize various amounts of data in order to enhance the 
                         modeling and monitoring of these resources. </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">The goal of this project is to develop a power
-                        distribution model based on energy consumption data across an Austin-wide electrical grid system.
-                        Our power distribution model takes in smart meter measurements from individual homes and 
-                        outputs DPMU data, which are real-time power measurements that describe the full topology of 
-                        a power distribution network. </p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">The goal of this project is to develop power
+                        distribution models based on energy consumption data across an Austin-wide electrical grid system.
+                        Our power distribution models take in smart meter measurements from individual homes and 
+                        predict DPMU data, which are real-time power measurements that describe the full topology of 
+                        a power distribution network. 
+                        </p></div>
                 </div>
+
+
+
+
 
             </div>
         </section>
