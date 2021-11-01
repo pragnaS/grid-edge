@@ -18,14 +18,18 @@ export class Masthead extends Component {
                     <div class="divider-custom-line"></div>
                 </div>
                 {/* <!-- Masthead Subheading--> */}
-                <p class="masthead-subheading font-weight-light mb-0">Swetha Berana -
+                {/* <p class="masthead-subheading font-weight-light mb-0">Swetha Berana -
                     Anissa Chan - 
                     Simoni Maniar - 
                     Megan Nguyen - 
                     Pragna Subrahmanya - 
                     Lucy Zheng
-                    </p>
-  
+                    </p> */}
+                    <h1 > 
+
+                    2021 Senior Design Project
+                    </h1>
+
                 <div>
 
                     <div class="divider-custom divider-light">

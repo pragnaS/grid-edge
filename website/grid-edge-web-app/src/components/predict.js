@@ -70,7 +70,7 @@ function Predict() {
         // }
         // setOutput(result)
 
-        const result = await Storage.get('predictions/' + fileName.slice(0,-4) + '_predictions.csv',
+        const result = await Storage.get('predictions/' + fileName.slice(0,-4) + '_linear_predictions.csv',
         {
             contentType: 'text/csv',
             level: 'public/',
@@ -106,7 +106,7 @@ function Predict() {
     } 
     
     const getNNOutput = async() => {
-        const result = await Storage.get('predictions/' + fileName.slice(0,-4) + '_predictions.csv',
+        const result = await Storage.get('predictions/' + fileName.slice(0,-4) + '_neural_predictions.csv',
         {
             contentType: 'text/csv',
             level: 'public/',
@@ -141,7 +141,7 @@ function Predict() {
         }
     } 
     const getInverseOutput = async() => {
-        const result = await Storage.get('predictions/' + fileName.slice(0,-4) + '_predictions.csv',
+        const result = await Storage.get('predictions/' + fileName.slice(0,-4) + '_inverse_predictions.csv',
         {
             contentType: 'text/csv',
             level: 'public/',
@@ -204,7 +204,7 @@ function Predict() {
 
                 <p class=" text-lg-center lead"> P = real power; Q = reactive power</p>
 
-                <img src="assets/img/input_format.png"/> 
+                <img class="rounded" src="assets/img/input_format.png"/> 
                 {/* <img class="img-fluid" src="assets/img/visuals/nn/house15.jpeg" alt="..." /> */}
                 <div>
                     <div class="divider-custom divider-light"></div>
@@ -226,7 +226,7 @@ function Predict() {
                                 const storageResult = await Storage.put('uploads/' + fileName, file, {
                                 level: 'public',
                                 type: 'text/csv',
-                                tagging: 'linear=true&Neural=false'
+                                tagging: 'linear=true&neural=false&inverse=false'
                                 })
                                 setUploaded(true)
                                 console.log(storageResult)
@@ -328,7 +328,7 @@ function Predict() {
                                 const storageResult = await Storage.put('uploads/' + fileName, file, {
                                 level: 'public',
                                 type: 'text/csv',
-                                tagging: 'linear=true&Neural=false'
+                                tagging: 'linear=false&neural=true&inverse=false'
                                 })
                                 setUploaded(true)
                                 console.log(storageResult)
@@ -378,7 +378,7 @@ function Predict() {
                 </div>
 
                 <p class=" text-lg-center lead"> The input data should match the following format in a csv file: </p>
-                <img src="assets/img/input_format.png"/>  
+                <img class="rounded" src="assets/img/input_format.png"/>  
                 <br/><br/>
 
                 <div id="inverse" class="text-center mt-4">
@@ -396,7 +396,7 @@ function Predict() {
                                 const storageResult = await Storage.put('uploads/' + fileName, file, {
                                 level: 'public',
                                 type: 'text/csv',
-                                tagging: 'linear=true&Neural=false'
+                                tagging: 'linear=false&neural=false&inverse=true'
                                 })
                                 setUploaded(true)
                                 console.log(storageResult)

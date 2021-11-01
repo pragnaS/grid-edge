@@ -75,6 +75,44 @@
   }
 }
 
+/* .circle{ */
+  /* border: 2px solid red; */
+  /* width: 200px; */
+  /* height: 200px; */
+  /* border-radius:100%; */
+  /* background-image: url(''); */
+  /* object-fit: contain; */
+/* } */
+
+.circle{
+  /* background: url("imageUrl.jpg"); */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  /* object-fit: contain; */
+}
+.img-with-text {
+  text-align: justify;
+  width: [width of img];
+}
+
+.img-with-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  white-space: nowrap;
+}
+
+ul, li {
+  list-style: none;
+  display: inline;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
