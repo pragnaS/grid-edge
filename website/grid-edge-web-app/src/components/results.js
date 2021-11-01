@@ -15,68 +15,60 @@ export class Results extends Component {
                     <div class="divider-custom-line"></div>
                 </div>
 
-                <div class="container">
+                {/* <div class="container">
                     <div class="ms-auto"><h6 class="lead">This project successfully answered 2 questions: </h6></div>
                     <br></br>
-                </div>
 
-                <div class="container">
-                    <div class="ms-auto"><h6 class="lead">1) Given smart meter power measurements from any number of homes over a period of time, 
-                what does the power distribution network look like?</h6></div>
-                    <br></br>
-                </div>
+                        <div class="ms-auto"><h6 class="lead">1) Given power consumption measurements from any number of homes, 
+                    what does the power distribution network look like?</h6></div>
+                        <br></br>
 
-                <div class="container">
-                    <div class="ms-auto"><h6 class="lead">
-                2) Given a power distribution network, what do the power measurements look like over time for homes in that power network?</h6></div>
-                    <br></br>
-                </div>
+                        <div class="ms-auto"><h6 class="lead">
+                    2) Given a power distribution network, what is the power consumption for each node in the network?</h6></div>
+                        <br></br>
 
-                <div class="container">
-                    <div class="ms-auto"><h6 class="lead">Our team created 3 final models. The linear and neural network models both
-                    predict DPMU data given smart meter measurements from homes. The inverse neural network predicts smart 
-                    meter measurements given DPMU data. </h6></div>
-                    <br></br>
-                </div>
+                        
+                </div> */}
                 
 
-                <div class="divider-custom ">
+                {/* <div class="divider-custom ">
                         <div class="divider-custom-line"></div>
                         <br></br>
-                </div>
+                </div> */}
 
 
 
                 <div class="container">
+                        <h6 class="lead">Our team created 3 final models. The linear and neural network models both
+                        predict DPMU data given SmartMeter power measurements from homes. The inverse neural network predicts household power consumption 
+                        given DPMU data. </h6>
+                        <br></br>
                     <h3 class="text-center text-uppercase text-secondary">Mean Squared Error</h3>
                     <div class="divider-custom "></div>
                 </div>
 
-                <div class="container"><h6 class="lead">The accuracy for each model was measured using the mean squared error
-                between the predicted and actual values. </h6></div>
+                <h6 class="lead center">These were the MSE values for the final models: </h6>
                 <div class="divider-custom "></div>
 
-                <div class="container">
-                    <div class="row"> 
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <h4 class="text-uppercase text-center fst-italic mb-4">Linear Model</h4>
-                            <h3 class="text-primary text-center">
-                                1.24e-6
-                            </h3>
-                        </div> 
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <h4 class="text-uppercase text-center fst-italic mb-4">Neural Network</h4>
-                            <h3 class="text-primary text-center ">
-                                4.72e-7
-                            </h3>
-                        </div>  
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <h4 class="text-uppercase text-center fst-italic mb-4">Inverse Neural Net</h4>
-                            <h3 class="text-primary text-center ">
-                                5.73e-7
-                            </h3>
-                        </div> 
-                    </div>
+                <div class="row"> 
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase text-center fst-italic mb-4">Linear Model</h4>
+                        <h3 class="text-primary text-center">
+                            1.24e-6
+                        </h3>
+                    </div> 
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase text-center fst-italic mb-4">Neural Network</h4>
+                        <h3 class="text-primary text-center ">
+                            4.72e-7
+                        </h3>
+                    </div>  
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase text-center fst-italic mb-4">Inverse Neural Net</h4>
+                        <h3 class="text-primary text-center ">
+                            5.73e-7
+                        </h3>
+                    </div> 
                 </div>
 
                 <div class="divider-custom ">
@@ -84,13 +76,11 @@ export class Results extends Component {
                         <br></br>
                 </div>
 
-                <div class="container">
-                    <h3 class="text-center text-uppercase text-secondary">Predictions Visualized</h3>
-                    <div class="divider-custom "></div>
-                </div>
+                <h3 class="text-center text-uppercase text-secondary">Predictions Visualized</h3>
+                <div class="divider-custom "></div>
 
-                <div class="container"><h6 class="lead">These charts show the neural network's predictions vs actual voltage values 
-                in a 4 month time span for 9 houses. </h6></div>
+                <h6 class="lead">These charts show the neural network's DPMU predictions vs actual DPMU voltage values 
+                in a 4 month time span for 9 houses in a power network. </h6>
                 <div class="divider-custom "></div>
 
                 {/* <!-- Portfolio Grid Items--> */}

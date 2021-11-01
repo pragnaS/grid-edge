@@ -7,7 +7,7 @@ import Header from './components/header';
 import Masthead from './components/masthead';
 import Predict from './components/predict';
 import Results from './components/results';
-
+import Method from './components/method' 
 import './css/styles.css';
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         <Header/>
         <Masthead/>
         <About/>
+        <Method/>
         <Results/>
         <Predict/>
       </div>
