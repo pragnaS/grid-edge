@@ -18,7 +18,7 @@ export class About extends Component {
 
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="img-with-text" class="text-center">
-                            <img class="circle" src="assets/img/faces/megan.jpg" alt="swetha" />
+                            <img class="circle" src="assets/img/faces/swetha.jpeg" alt="swetha" />
                             <br/> <br/>
                             <h6 class="lead">Swetha Berana</h6>
                             <h6 class="lead" class="fst-italic">ML Team</h6>
