@@ -75,8 +75,32 @@ export class About extends Component {
 
                 </div>
 
+                <div class="text-center">
+                    {/* <h6 class="lead"> 
+                        The project was developed and overseen by <a href="https://sites.utexas.edu/haozhu/"> Dr. Hao Zhu</a>.
+                    </h6> */}
+
+                    <div class="img-with-text" class="text-center">
+                            <img class="circle" src="assets/img/faces/zhu.jpg" alt="zhu" />
+                            <br/> <br/>
+                            <h6 class="lead"> 
+                                The project was developed and overseen by <a href="https://sites.utexas.edu/haozhu/"> Dr. Hao Zhu</a>.
+                            </h6>
+                            {/* <h6 class="lead" > Dr. Hao Zhu</h6> */}
+                            {/* <h6 class="lead" class="fst-italic"> Website Team</h6> */}
+                    </div>
+
+                </div>
+
+                <br/> <br/>
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    {/* <div class="divider-custom-icon"><i class="fas fa-bolt"></i></div> */}
+                    {/* <div class="divider-custom-line"></div> */}
+                </div>           
 
 
+                <br/><br/>
 
                 <br/>
                 {/* About Section Heading]  */}
@@ -89,11 +113,7 @@ export class About extends Component {
                 </div>
 
                 {/* About Section Content */}
-                <div class="text-center">
-                    <h6 class="lead"> 
-                        The project was developed and overseen by <a href="https://sites.utexas.edu/haozhu/"> Dr. Hao Zhu</a>.
-                    </h6>
-                </div>
+
                 <br/>
 
                 <div class="row">
