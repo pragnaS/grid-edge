@@ -103,6 +103,37 @@ function Predict() {
         //use when changing to download button when results are ready
             document.getElementById("linear").appendChild(a)
         }
+
+
+        const img_url = await Storage.get('predictions/' + fileName.slice(0,-4) + '_linear_plot.png',
+        {
+            contentType: 'image/png',
+            level: 'public/',
+            download: 'true'
+        })
+        var linebreak = document.createElement("br");
+    
+        
+        document.getElementById("linear").appendChild(linebreak)
+        // document.getElementById("linear").appendChild(linebreak)
+ 
+        var img = document.createElement('img') 
+        img.src = img_url    
+        img.id = "linear_plot"
+
+        img.classList.add("text-center")
+        img.classList.add("my-auto")
+        img.classList.add("rounded")
+
+        var linear_plot = document.getElementById("linear_plot");
+        
+        if(linear_plot) {
+            linear_plot.parentNode.replaceChild(img, linear_plot)
+        } else {
+            document.getElementById("linear").appendChild(img)
+        }
+
+
     } 
     
     const getNNOutput = async() => {
@@ -139,6 +170,35 @@ function Predict() {
         //use when changing to download button when results are ready
             document.getElementById("nn").appendChild(a)
         }
+
+        const img_url = await Storage.get('predictions/' + fileName.slice(0,-4) + '_neural_plot.png',
+        {
+            contentType: 'image/png',
+            level: 'public/',
+            download: 'true'
+        })
+        var linebreak = document.createElement("br");
+    
+        
+        document.getElementById("nn").appendChild(linebreak)
+        // document.getElementById("linear").appendChild(linebreak)
+ 
+        var img = document.createElement('img') 
+        img.src = img_url    
+        img.id = "neural_plot"
+
+        img.classList.add("text-center")
+        img.classList.add("my-auto")
+        img.classList.add("rounded")
+
+        var neural_plot = document.getElementById("neural_plot");
+        
+        if(neural_plot) {
+            neural_plot.parentNode.replaceChild(img, neural_plot)
+        } else {
+            document.getElementById("nn").appendChild(img)
+        }
+
     } 
     const getInverseOutput = async() => {
         const result = await Storage.get('predictions/' + fileName.slice(0,-4) + '_inverse_predictions.csv',
@@ -176,6 +236,39 @@ function Predict() {
         }
     }  
 
+
+    const getLinearImage = async() => {
+        const img_url = await Storage.get('predictions/' + fileName.slice(0,-4) + '_linear_plot.png',
+        {
+            contentType: 'text/csv',
+            level: 'public/',
+            download: 'false'
+        })
+        // var linebreak = document.createElement("br");
+    
+        // document.getElementById("inverse").appendChild(linebreak)
+        // document.getElementById("predict").appendChild(linebreak)
+ 
+        var img = document.createElement('img') 
+        img.src = img_url    
+        img.id = "linear_plot"
+
+        img.classList.add("text-center")
+        img.classList.add("my-auto")
+    
+        // var link_text = document.createTextNode('Download Predictions for ' + fileName)
+        // a.appendChild(link_text)
+        // a.title = 'Download'
+        // a.href = result
+        // div.appendChild(a)
+        var linear_plot = document.getElementById("linear_plot");
+        
+        if(linear_plot) {
+            linear_plot.parentNode.replaceChild(img, linear_plot)
+        } else {
+            document.getElementById("linear").appendChild(img)
+        }
+    }  
 
     // render() {
         return (
@@ -378,7 +471,7 @@ function Predict() {
                 </div>
 
                 <p class=" text-lg-center lead"> The input data should match the following format in a csv file: </p>
-                <img class="rounded" src="assets/img/input_format.png"/>  
+                <img class="rounded" src="assets/img/example_input2.png"/>  
                 <br/><br/>
 
                 <div id="inverse" class="text-center mt-4">
