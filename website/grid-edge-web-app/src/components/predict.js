@@ -234,6 +234,36 @@ function Predict() {
         //use when changing to download button when results are ready
             document.getElementById("inverse").appendChild(a)
         }
+
+
+        const img_url = await Storage.get('predictions/' + fileName.slice(0,-4) + '_inverse_plot.png',
+        {
+            contentType: 'image/png',
+            level: 'public/',
+            download: 'true'
+        })
+        var linebreak = document.createElement("br");
+    
+        
+        document.getElementById("inverse").appendChild(linebreak)
+        // document.getElementById("linear").appendChild(linebreak)
+ 
+        var img = document.createElement('img') 
+        img.src = img_url    
+        img.id = "inverse_plot"
+
+        img.classList.add("text-center")
+        img.classList.add("my-auto")
+        img.classList.add("rounded")
+
+        var inverse_plot = document.getElementById("inverse_plot");
+        
+        if(inverse_plot) {
+            inverse_plot.parentNode.replaceChild(img, inverse_plot)
+        } else {
+            document.getElementById("inverse").appendChild(img)
+        }
+
     }  
 
 

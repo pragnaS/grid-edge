@@ -66,7 +66,7 @@ export class Results extends Component {
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase text-center fst-italic mb-4">Inverse Neural Net</h4>
                         <h3 class="text-primary text-center ">
-                            5.73e-7
+                            0.01534
                         </h3>
                     </div> 
                 </div>
