@@ -71,6 +71,10 @@ export class Results extends Component {
                     </div> 
                 </div>
 
+                <br/>
+                <img class="center" src="assets/img/mse_inverse.png" alt="..." />
+                <br/>
+
                 <div class="divider-custom ">
                         <div class="divider-custom-line"></div>
                         <br></br>

@@ -188,7 +188,7 @@ export class Method extends Component {
                              For each possible number of components, we fit PCA to it and calculated the 
                              cumulative sum of the variance ratios for each dimension of data. Once this value
                               starts to converge, we have reached an optimum number of components. In our situation, 
-                              this was 10 components.
+                              this was 18 components.
   
                             </p>
                         </div>
