@@ -84,7 +84,7 @@ export class Results extends Component {
                 <div class="divider-custom "></div>
 
                 <h6 class="lead">These charts show the neural network's DPMU predictions vs actual DPMU voltage values 
-                in a 4 month time span for 9 houses in a power network. </h6>
+                in a 4 month time span for 9 transmission lines in a power network. </h6>
                 <div class="divider-custom "></div>
 
                 {/* <!-- Portfolio Grid Items--> */}
