@@ -317,7 +317,9 @@ function Predict() {
                 </div>
                 <h3 class="text-uppercase text-center mb-4">Predict DPMU Data</h3>
                 <div class="row">
-                    <p class=" text-lg-center lead"> Input your smart meter data to get predicted DPMU voltage measurements </p>
+                    <p class=" text-lg-center lead"> Input your smart meter data to get predicted DPMU voltage measurements.
+                    <br/>
+                    Input csv must have 48 columns, or P and Q for 24 houses. </p>
                     {/* <div class="divider-custom divider-light"> */}
                         {/* <div class="divider-custom-line"></div> */}
                     {/* </div> */}
@@ -495,7 +497,9 @@ function Predict() {
 
                 <h3 class="text-uppercase text-center mb-4">Predict Household Power Consumption</h3>
                 <div class="row">
-                    <p class=" text-lg-center lead"> Input DPMU data to get predicted power measurements for homes</p>
+                    <p class=" text-lg-center lead"> Input DPMU data to get predicted power measurements for homes
+                    <br/>
+                    Input csv must have at least 36 columns.</p>
                     {/* <div class="divider-custom divider-light">
                     </div> */}
                 </div>

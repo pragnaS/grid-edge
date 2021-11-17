@@ -86,7 +86,8 @@ export class Method extends Component {
 
                      <h6 class="lead">Our goal was to train a machine learning model to do the work that GridLAB-D does. 
                      Specifically, the model was to accurately predict what DPMU meters would measure (target) given 
-                     SmartMeter data (input).  
+                     SmartMeter data (input). These DPMU measurements correspond to voltage at distribution tranformers in 
+                     an overhead power line. 
                     </h6>
                     <br/>
 
@@ -203,7 +204,7 @@ export class Method extends Component {
                             from 1:37. For each possible number of components, we fit KMeans to it and calculated
                              the inertia (which is the squared distance of a data point to the closest cluster).
                               Once this inertia value starts to converge, we have reached an optimum number of 
-                              clusters. In our situation, this was 5 clusters. 
+                              clusters. In our situation, this was 6 clusters. 
                             </p>
                         </div>
                     </div>
