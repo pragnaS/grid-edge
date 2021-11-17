@@ -94,7 +94,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house3.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house1.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house3.jpeg" alt="..." /> */}
                         </div>
                     </div>
                     {/* <!-- Portfolio Item 2--> */}
@@ -102,7 +104,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house4.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house2.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house4.jpeg" alt="..." /> */}
                         </div>
                     </div>
                     {/* <!-- Portfolio Item 3--> */}
@@ -110,7 +114,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house8.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house3.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house8.jpeg" alt="..." /> */}
                         </div>
                     </div>
                     {/* <!-- Portfolio Item 4--> */}
@@ -118,7 +124,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house9.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house4.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house9.jpeg" alt="..." /> */}
                         </div>
                     </div>
                     {/* <!-- Portfolio Item 5--> */}
@@ -126,7 +134,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house13.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house5.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house13.jpeg" alt="..." /> */}
                         </div>
                     </div>
                     {/* <!-- Portfolio Item 6--> */}
@@ -134,7 +144,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house14.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house6.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house14.jpeg" alt="..." /> */}
                         </div>
                     </div>
                    {/* <!-- Portfolio Item 1--> */}
@@ -142,7 +154,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house15.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house7.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house15.jpeg" alt="..." /> */}
                         </div>
                     </div>
                     {/* <!-- Portfolio Item 2--> */}
@@ -150,7 +164,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house17.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house8.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house17.jpeg" alt="..." /> */}
                         </div>
                     </div>
                     {/* <!-- Portfolio Item 3--> */}
@@ -158,7 +174,9 @@ export class Results extends Component {
                         <div class="mx-auto">
                             <div class="align-items-center justify-content-center h-100 w-100">
                             </div>
-                            <img class="img-fluid" src="assets/img/visuals/nn/house18.jpeg" alt="..." />
+                            <img class="img-fluid" src="assets/img/visuals/new/house9.jpg" alt="..." />
+
+                            {/* <img class="img-fluid" src="assets/img/visuals/nn/house18.jpeg" alt="..." /> */}
                         </div>
                     </div>
                 </div>
